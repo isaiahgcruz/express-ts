@@ -1,5 +1,4 @@
-function test(string: String) {
-  console.log(string);
-}
+import App from "./App";
 
-test("hello world");
+const app = new App();
+app.start(3000);
