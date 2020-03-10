@@ -1,6 +1,6 @@
-import * as bodyParser from "body-parser";
-import { Server } from "@overnightjs/core";
-import { Logger } from "@overnightjs/logger";
+import * as bodyParser from 'body-parser';
+import { Server } from '@overnightjs/core';
+import { Logger } from '@overnightjs/logger';
 
 class App extends Server {
   constructor() {
@@ -12,7 +12,7 @@ class App extends Server {
   public start(port: number): void {
     const message = `Server running on port ${port}`;
 
-    this.app.get("*", (req, res) => {
+    this.app.get('*', (req, res) => {
       res.send(message);
     });
 
